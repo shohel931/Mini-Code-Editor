@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Code Editor</title>
+</head>
+<body>
+
+<div class="editor_container">
+    <div class="editor">
+        
+        <h2>HTML</h2>
+        <textarea  id="html_code"></textarea>
+        
+        <h2>CSS</h2>
+        <textarea  id="css_code"></textarea>
+        
+        <h2>JS</h2>
+        <textarea  id="js_code"></textarea>
+
+        <button onclick="runCode()">Run ▶</button>
+
+    </div>
+
+    <div class="output">
+        <h2>Output</h2>
+        <iframe id="preview"></iframe>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

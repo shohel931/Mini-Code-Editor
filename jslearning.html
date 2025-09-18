@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+        document.getElementById('work').innerHTML='Hello I am Shohel Rana';
+        }
+    </script>
+</head>
+<body>
+    
+
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click me and show date</button>
+<p id="demo"></p>
+
+<p id="hello" style="display: none;">Hello It's a demo project.</p>
+<button type="button" onclick="document.getElementById('hello').innerHTML='Hello I am Shohel Rana'">Click Here</button>
+<button type="button" onclick="document.getElementById('hello').style.fontSize='30px'">Click</button>
+<button type="button" onclick="document.getElementById('hello').style.display='block'">Click</button>
+
+<br><br>
+
+
+
+<button type="button" onclick="document.getElementById('light').src=('pic_bulbon.gif')">Click Trun On Light</button>
+
+<img id="light" src="pic_bulboff.gif" width="100" height="180">
+
+<button type="button" onclick="document.getElementById('light').src=('pic_bulboff.gif')">Click Trun Off Light</button>
+
+
+
+<p id="work">Hi gyes.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+
+<br>
+<button type="button" onclick="document.getElementById('work').style.color='red'">Click Change Color</button>
+
+<button type="button" onclick="document.write(5+11)">Try it</button>
+
+<br><br>
+<button type="button" onclick="window.print()">Print</button>
+
+<p id="world"></p>
+
+<script>
+    document.getElementById("world").innerHTML='<h2>I am a Web Developer</h2>';
+    window.alert('Hello I am Shohel Rana');
+
+    document.write('<h3>I am a Web Designer</h3>');
+</script>
+
+
+
+
+
+</body>
+</html>
