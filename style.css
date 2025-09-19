@@ -9,13 +9,17 @@ body {
     display: flex;
     height: 100vh;
 }
+
 .editor {
     width: 40%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     background-color: #fff;
     overflow-y: auto;
+    min-width: 20%;
+    max-width: 70%;
 }
+
 .editor h2 {
     margin: 10px 0 5px;
 }
@@ -36,12 +40,19 @@ button {
   cursor: pointer;
   margin-bottom: 10px;
 }
-
 button:hover {
     background: #0056b3;
 }
+
+/* Divider Style */
+.divider {
+    width: 5px;
+    cursor: col-resize;
+    background: #ccc;
+}
+
 .output {
-    width: 60%;
+    flex-grow: 1;
     padding: 10px;
     background: #e9ecef;
 }
@@ -58,6 +69,11 @@ button:hover {
 @media (max-width: 768px) {
     .editor_container {
         flex-direction: column;
+    }
+    .divider {
+        height: 5px;
+        width: 100%;
+        cursor: row-resize;
     }
     .editor, .output {
         width: 100%;
